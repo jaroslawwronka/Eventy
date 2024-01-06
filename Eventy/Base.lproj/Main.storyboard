@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Eventy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZZ-gb-V0V">
+                                <rect key="frame" x="161" y="74" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mGd-Eu-xdt">
+                                <rect key="frame" x="10" y="69" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="uTR-eF-6hD"/>
+                                </connections>
+                            </switch>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTG-yx-BjR">
+                                <rect key="frame" x="10" y="194" width="373" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzt-X3-8m4">
+                                <rect key="frame" x="157.66666666666666" y="245" width="78" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="UGb-jz-xm6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                <connections>
+                                    <action selector="SubmitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MCG-aB-4A8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gzt-X3-8m4" secondAttribute="bottom" constant="538" id="4Ey-7F-vy7"/>
+                            <constraint firstItem="9ZZ-gb-V0V" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4he-Y4-dHv"/>
+                            <constraint firstItem="gzt-X3-8m4" firstAttribute="top" secondItem="dTG-yx-BjR" secondAttribute="bottom" constant="16" id="Cj3-Oc-Xgc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dTG-yx-BjR" secondAttribute="trailing" constant="10" id="F6r-oH-S2a"/>
+                            <constraint firstItem="mGd-Eu-xdt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="PoM-Zw-MaL"/>
+                            <constraint firstItem="dTG-yx-BjR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="U23-tt-BZQ"/>
+                            <constraint firstItem="dTG-yx-BjR" firstAttribute="top" secondItem="mGd-Eu-xdt" secondAttribute="bottom" constant="94" id="ZBt-q3-VH0"/>
+                            <constraint firstItem="dTG-yx-BjR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="av7-dq-b1a"/>
+                            <constraint firstItem="gzt-X3-8m4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gpG-ES-s9z"/>
+                            <constraint firstItem="gzt-X3-8m4" firstAttribute="centerX" secondItem="dTG-yx-BjR" secondAttribute="centerX" id="nUO-EZ-BUI"/>
+                            <constraint firstItem="mGd-Eu-xdt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="scL-Qb-gLz"/>
+                            <constraint firstItem="9ZZ-gb-V0V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="v43-nM-W6X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="NameField" destination="dTG-yx-BjR" id="vDm-5C-e2f"/>
+                        <outlet property="WelcomeName" destination="9ZZ-gb-V0V" id="PXb-MW-A9U"/>
+                        <outlet property="togleSwitch" destination="mGd-Eu-xdt" id="tu5-ss-rWQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
